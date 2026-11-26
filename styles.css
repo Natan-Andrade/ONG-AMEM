@@ -51,6 +51,7 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
 .hero-copy > p { max-width: 455px; margin-bottom: 25px; color: var(--muted); font-size: 16px; line-height: 1.8; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 13px; font-weight: 700; transition: color .2s ease; }
+.icon { display: block; width: 16px; height: 16px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .hero-note { display: flex; align-items: center; gap: 13px; margin-top: 39px; }
 .hero-note p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .hero-note strong { color: var(--ink); font-size: 12px; }
@@ -64,13 +65,16 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
 .photo-caption { position: absolute; z-index: 1; right: -17px; bottom: 24px; display: flex; align-items: center; gap: 12px; padding: 13px 20px; border-radius: 10px; background: white; box-shadow: 0 12px 35px rgba(64, 35, 48, .13); color: var(--muted); font-size: 11px; line-height: 1.45; }
 .photo-caption strong { color: var(--ink); font-size: 13px; }
 .caption-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--pink-soft); color: var(--pink); font-size: 18px; }
+.caption-icon .icon { width: 18px; height: 18px; }
 .hero-sparkle { position: absolute; color: #e894b2; }
+.hero-sparkle .icon { width: 1em; height: 1em; }
 .sparkle-one { top: 50px; left: -26px; font-size: 28px; }
 .sparkle-two { right: 3px; bottom: 105px; font-size: 18px; }
 .quick-facts { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 0; padding: 23px 26px; border: 1px solid #f5e8ed; border-radius: 12px; background: white; box-shadow: 0 12px 35px rgba(64, 35, 48, .05); }
 .quick-facts > div { display: flex; align-items: center; justify-content: center; gap: 12px; color: #695b63; font-size: 12px; line-height: 1.45; }
 .quick-facts > div + div { border-left: 1px solid var(--line); }
 .fact-icon { width: 38px; height: 38px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: #fff1f6; color: var(--pink); font-size: 19px; }
+.fact-icon .icon { width: 19px; height: 19px; }
 
 .story { padding-top: 114px; }
 .story-grid { display: grid; grid-template-columns: .9fr 1fr; align-items: center; gap: 95px; }
@@ -117,13 +121,15 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
 .donation { padding-block: 54px; background: #fff3f7; }
 .donation-inner { display: grid; grid-template-columns: 58px 1fr auto; align-items: center; gap: 25px; }
 .donation-mark { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: white; color: var(--pink); font-size: 27px; }
+.donation-mark .icon { width: 26px; height: 26px; }
 .donation-copy .eyebrow { font-size: 10px; }
 .donation-copy h2 { margin: 4px 0 3px; font-size: 26px; letter-spacing: -.04em; }
 .donation-copy p { margin: 0; color: var(--muted); font-size: 12px; }
 .pix-box { min-width: 235px; display: grid; gap: 4px; padding: 15px 19px; border: 1px solid #efd8e1; border-radius: 9px; background: rgba(255,255,255,.7); }
 .pix-box > span:first-child { color: var(--muted); font-size: 10px; }
 .pix-box strong { font: 700 15px var(--heading); letter-spacing: .025em; }
-.copy-button { justify-self: start; padding: 0; border: 0; background: none; color: var(--pink-dark); font-size: 11px; font-weight: 700; cursor: pointer; }
+.copy-button { display: inline-flex; align-items: center; gap: 5px; justify-self: start; padding: 0; border: 0; background: none; color: var(--pink-dark); font-size: 11px; font-weight: 700; cursor: pointer; }
+.copy-button .icon { width: 14px; height: 14px; }
 .copy-button:hover { text-decoration: underline; }
 .copy-status { min-height: 0; color: #28774c; font-size: 10px; }
 
@@ -133,6 +139,7 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
 .contact-copy > p { max-width: 430px; color: var(--muted); font-size: 13px; line-height: 1.8; }
 .contact-phone { display: inline-flex; align-items: center; gap: 12px; margin-top: 12px; }
 .whatsapp-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #eaf6ed; color: #338650; font-size: 20px; }
+.whatsapp-icon .icon { width: 21px; height: 21px; }
 .contact-phone > span:last-child { display: grid; line-height: 1.4; }
 .contact-phone small { color: var(--muted); font-size: 10px; }
 .contact-phone strong { font: 700 15px var(--heading); }
