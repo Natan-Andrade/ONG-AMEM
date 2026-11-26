@@ -27,8 +27,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header { position: sticky; z-index: 10; top: 0; border-bottom: 1px solid rgba(240, 229, 233, .8); background: rgba(255, 255, 255, .94); backdrop-filter: blur(14px); }
 .header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 14px 14px 14px 4px; background: var(--pink); color: white; font: 800 24px/1 var(--heading); letter-spacing: -3px; padding-right: 3px; }
-.brand-mark span { color: #ffe4ef; }
+.brand-logo { width: 48px; height: 48px; display: block; border-radius: 8px; background: white; object-fit: contain; }
 .brand-copy { display: grid; line-height: 1.15; }
 .brand-copy strong { font: 800 17px var(--heading); letter-spacing: .08em; }
 .brand-copy small { margin-top: 4px; color: var(--muted); font-size: 10px; letter-spacing: .035em; }
@@ -155,7 +154,6 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
 
 .site-footer { padding-block: 30px 17px; background: #382932; color: white; }
 .footer-main { display: flex; align-items: center; justify-content: space-between; padding-bottom: 24px; }
-.footer-brand .brand-mark { background: #e56b98; }
 .footer-brand .brand-copy small { color: #ddcbd3; }
 .footer-main > p { margin: 0; color: #e1d3d9; font-size: 12px; line-height: 1.6; }
 .footer-top { display: inline-flex; align-items: center; gap: 10px; color: #f4dce6; font-size: 11px; }
@@ -187,7 +185,7 @@ h1 em, h2 em { color: var(--pink); font-style: normal; }
   .container { width: calc(100% - 36px); }
   .section-wrap { padding-block: 62px; }
   .header-inner { min-height: 66px; }
-  .brand-mark { width: 36px; height: 36px; font-size: 22px; }
+  .brand-logo { width: 42px; height: 42px; }
   .brand-copy strong { font-size: 15px; }
   .brand-copy small { font-size: 9px; }
   .menu-toggle { width: 42px; height: 42px; display: grid; align-content: center; justify-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 8px; background: white; cursor: pointer; }
